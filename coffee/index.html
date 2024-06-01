@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="top-title">今日のあなたに合ったコーヒーは？</h1>
+    <form class="form" action="todayscoffee.php" method="post">
+
+      <dl>
+        <dt><label for="name">お名前</label></dt>
+        <dd><input type="text" name="name" id="name" required/></dd>
+      </dl>
+
+      <dl>
+        <dt>味の好みは？</dt>
+        <dd>
+          <input type="radio" name="taste" id="sour" value="sour">
+          <label for="sour">酸っぱめ</label>
+          <input type="radio" name="taste" id="balance" value="balance" checked>
+          <label for="balance">ちょうどいい</label>
+          <input type="radio" name="taste" id="bitter" value="bitter">
+          <label for="bitter">苦め</label>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>今日の気分は</dt>
+        <dd>
+          <input type="radio" name="feeling" id="tired" value="tired" checked>
+          <label for="tired">疲れてる</label>
+          <input type="radio" name="feeling" id="refresh" value="refresh">
+          <label for="refresh">爽快！</label>
+        </dd>
+      </dl>
+
+      <button class="start-button" type="submit">
+        今日飲むコーヒーを見てみる
+      </button>
+
+    </form>
+  </body>
+</html>

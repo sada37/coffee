@@ -1,0 +1,121 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form {
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 1.5rem;
+  margin-top: 64px;
+  width: 90vw;
+}
+
+.top-title {
+  text-align: center;
+  padding: 32px;
+  background-color: rgb(231, 203, 112);
+}
+
+dl {
+  border: 2px solid #ff6600;
+  padding: 16px;
+}
+
+dl + dl {
+  margin-top: 32px;
+}
+
+input {
+  display: block;
+  font-size: 20px;
+  padding: 4px;
+  appearance: none;
+}
+
+@media screen and (min-width: 680px) {
+  input {
+    display: inline;
+  }
+}
+input:checked + label {
+  background-color: #ffc400;
+  color: #fff;
+}
+
+dt {
+  display: inline-block;
+  background-color: rgb(227, 184, 12);
+}
+
+dd {
+  margin-top: 12px;
+}
+
+label {
+  padding: 4px 16px;
+  border: 1px solid #ffc400;
+}
+
+label + input[type="radio"] {
+  margin-right: 32px;
+}
+
+.start-button {
+  display: block;
+  margin-inline: auto;
+  font-size: 1.25rem;
+  padding: 8px;
+  margin-top: 64px;
+}
+
+/* ---------- todayscoffee ----------- */
+.inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.coffee-img {
+  aspect-ratio: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.coffee-image {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.inner h1 {
+  padding: 32px;
+}
+
+.inner h1 span {
+  color: tomato;
+}
+
+.inner p {
+  margin-top: 32px;
+  font-weight: bold;
+  color: rgb(227, 184, 12);
+  padding: 0 16px;
+  margin-inline: auto;
+}
+
+.back-button {
+  display: block;
+  max-width: 300px;
+  background-color: bisque;
+  padding: 12px 48px;
+  margin-inline: auto;
+  margin-top: 64px;
+}
